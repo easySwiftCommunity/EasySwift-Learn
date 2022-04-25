@@ -11,8 +11,10 @@ class MaterialsView: UIView {
 
     override init(frame: CGRect) {
         super.init(frame: frame)
-        setupOurMaterialsTable()
+        
         setupView()
+        setupOurMaterialsTable()
+        setupMainMaterialsLabel()
     }
     
     required init?(coder: NSCoder) {
@@ -21,12 +23,29 @@ class MaterialsView: UIView {
     
     private let ourMaterialsHeightRow: CGFloat = 44
     
+    
+    //MARK: - UIView
     private lazy var ourMaterialsTable: UITableView = {
         let table = UITableView(frame: CGRect.zero, style: .insetGrouped)
         table.translatesAutoresizingMaskIntoConstraints = false
         table.isScrollEnabled = false
         return table
     }()
+    
+    private lazy var mainMaterialsLabel: UILabel = {
+        let label = UILabel()
+        label.textAlignment = .center
+        label.translatesAutoresizingMaskIntoConstraints = false
+        label.text = "Основные материалы по Swift:"
+        label.font = UIFont.systemFont(ofSize: 23, weight: .bold)
+        label.numberOfLines = 1
+        label.adjustsFontSizeToFitWidth = true
+        label.minimumScaleFactor = 0.5
+        return label
+    }()
+    
+    
+    //MARK: - setups()
     
     private func setupOurMaterialsTable() {        
         addSubview(ourMaterialsTable)
@@ -42,6 +61,17 @@ class MaterialsView: UIView {
             ourMaterialsTable.heightAnchor.constraint(equalToConstant: ourMaterialsHeightRow * CGFloat(OurMaterials.allCases.count))
         ])                
     }
+    
+    private func setupMainMaterialsLabel(){
+            addSubview(mainMaterialsLabel)
+
+            NSLayoutConstraint.activate([
+                mainMaterialsLabel.leadingAnchor.constraint(equalTo: leadingAnchor),
+                mainMaterialsLabel.topAnchor.constraint(equalTo: ourMaterialsTable.bottomAnchor,constant: 32),
+                mainMaterialsLabel.trailingAnchor.constraint(equalTo: trailingAnchor),
+                mainMaterialsLabel.heightAnchor.constraint(equalToConstant: 30)
+            ])
+        }
     
     private func setupView() {
         backgroundColor = UIColor(named: "bg")
