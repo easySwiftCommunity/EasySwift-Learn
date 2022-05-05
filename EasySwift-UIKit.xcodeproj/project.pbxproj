@@ -15,6 +15,11 @@
 		A035DA492815C9E800CDEB74 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A035DA472815C9E800CDEB74 /* LaunchScreen.storyboard */; };
 		A0BAC0092816D31400FA2770 /* OurMaterials.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0BAC0082816D31400FA2770 /* OurMaterials.swift */; };
 		A0BAC00B2816D37A00FA2770 /* MaterialsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0BAC00A2816D37A00FA2770 /* MaterialsView.swift */; };
+		D29EC7A42818945F0022D404 /* DetailScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = D29EC7A32818945F0022D404 /* DetailScreen.swift */; };
+		D2B3FCD92817466500F2E28C /* CellCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2B3FCD82817466500F2E28C /* CellCollectionView.swift */; };
+		D2B3FCDB281747AC00F2E28C /* MainMaterialsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2B3FCDA281747AC00F2E28C /* MainMaterialsModel.swift */; };
+		D2DED84C28238819002DC2AB /* DetailInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2DED84B28238819002DC2AB /* DetailInfoView.swift */; };
+		D2F8A4EB28196A36000F3391 /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F8A4EA28196A36000F3391 /* TabBar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +33,11 @@
 		A035DA4A2815C9E800CDEB74 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A0BAC0082816D31400FA2770 /* OurMaterials.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OurMaterials.swift; sourceTree = "<group>"; };
 		A0BAC00A2816D37A00FA2770 /* MaterialsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaterialsView.swift; sourceTree = "<group>"; };
+		D29EC7A32818945F0022D404 /* DetailScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailScreen.swift; sourceTree = "<group>"; };
+		D2B3FCD82817466500F2E28C /* CellCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellCollectionView.swift; sourceTree = "<group>"; };
+		D2B3FCDA281747AC00F2E28C /* MainMaterialsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMaterialsModel.swift; sourceTree = "<group>"; };
+		D2DED84B28238819002DC2AB /* DetailInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailInfoView.swift; sourceTree = "<group>"; };
+		D2F8A4EA28196A36000F3391 /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +95,7 @@
 			isa = PBXGroup;
 			children = (
 				A0BAC0082816D31400FA2770 /* OurMaterials.swift */,
+				D2B3FCDA281747AC00F2E28C /* MainMaterialsModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -93,6 +104,8 @@
 			isa = PBXGroup;
 			children = (
 				A0BAC00A2816D37A00FA2770 /* MaterialsView.swift */,
+				D2DED84B28238819002DC2AB /* DetailInfoView.swift */,
+				D29EC79E281893B50022D404 /* MaterialsScreenCellCollectionView */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -101,8 +114,18 @@
 			isa = PBXGroup;
 			children = (
 				A035DA402815C9E700CDEB74 /* MaterialsViewController.swift */,
+				D29EC7A32818945F0022D404 /* DetailScreen.swift */,
+				D2F8A4EA28196A36000F3391 /* TabBar.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		D29EC79E281893B50022D404 /* MaterialsScreenCellCollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				D2B3FCD82817466500F2E28C /* CellCollectionView.swift */,
+			);
+			path = MaterialsScreenCellCollectionView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -176,11 +199,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D2F8A4EB28196A36000F3391 /* TabBar.swift in Sources */,
 				A0BAC00B2816D37A00FA2770 /* MaterialsView.swift in Sources */,
 				A035DA412815C9E700CDEB74 /* MaterialsViewController.swift in Sources */,
+				D2B3FCD92817466500F2E28C /* CellCollectionView.swift in Sources */,
 				A0BAC0092816D31400FA2770 /* OurMaterials.swift in Sources */,
+				D29EC7A42818945F0022D404 /* DetailScreen.swift in Sources */,
 				A035DA3D2815C9E700CDEB74 /* AppDelegate.swift in Sources */,
+				D2DED84C28238819002DC2AB /* DetailInfoView.swift in Sources */,
 				A035DA3F2815C9E700CDEB74 /* SceneDelegate.swift in Sources */,
+				D2B3FCDB281747AC00F2E28C /* MainMaterialsModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -321,7 +349,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = CWJGT3SS6R;
+				DEVELOPMENT_TEAM = UJ8B9FFXUA;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "EasySwift-UIKit/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -348,7 +376,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = CWJGT3SS6R;
+				DEVELOPMENT_TEAM = UJ8B9FFXUA;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "EasySwift-UIKit/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
