@@ -109,38 +109,3 @@ final class MaterialsView: UIView {
     }
 
 }
-
-
-extension MaterialsView: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
-
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath)-> CGSize{
-        return CGSize(width: self.frame.width - 33,  height: self.frame.height / 17 )
-    }
-
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return MaterialsViewController.singleton.mainMaterialsName.count
-    }
-
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: identifier, for: indexPath) as! CellCollectionView
-
-        cell.nameLabel.text = MaterialsViewController.singleton.mainMaterialsName[indexPath.row].name
-        cell.destinationImage.image = UIImage(named: identifier)
-
-        cell.layer.cornerRadius = 12.0
-        cell.backgroundColor = UIColor(red: 0.788, green: 0.8, blue: 0.82, alpha: 0.24)
-
-        
-        return cell
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
-        return UIEdgeInsets(top:5, left: 16, bottom: 10, right: 16)
-    }
-
-    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        print(indexPath.row)
-
-        
-    }
-}
