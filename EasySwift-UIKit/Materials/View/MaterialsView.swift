@@ -24,7 +24,7 @@ final class MaterialsView: UIView {
 
 
     //MARK: - create table
-     lazy var ourMaterialsTable: UITableView = {
+    lazy var ourMaterialsTable: UITableView = {
         let table = UITableView(frame: CGRect.zero, style: .insetGrouped)
         table.translatesAutoresizingMaskIntoConstraints = false
         table.isScrollEnabled = false
@@ -33,7 +33,7 @@ final class MaterialsView: UIView {
     }()
 
     //MARK: - create label
-     lazy var mainMaterialsLabel: UILabel = {
+    lazy var mainMaterialsLabel: UILabel = {
         let label = UILabel()
         label.textAlignment = .center
         label.translatesAutoresizingMaskIntoConstraints = false
@@ -47,7 +47,7 @@ final class MaterialsView: UIView {
     }()
 
     //MARK: - create collection
-     lazy var collectionView: UICollectionView = {
+    lazy var collectionView: UICollectionView = {
         let layout = UICollectionViewFlowLayout()
         layout.scrollDirection = .vertical
 
@@ -107,5 +107,4 @@ final class MaterialsView: UIView {
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-
 }

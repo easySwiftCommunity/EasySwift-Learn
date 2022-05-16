@@ -17,13 +17,13 @@ final class DetailInfoView: UIView {
     }
 
     //MARK: - create collection
-     lazy var collectionView: UICollectionView = {
+    lazy var collectionView: UICollectionView = {
         let layout = UICollectionViewFlowLayout()
         layout.scrollDirection = .vertical
 
         let collection = UICollectionView(frame: .zero, collectionViewLayout: layout)
         collection.translatesAutoresizingMaskIntoConstraints = false
-         collection.register(CellCollectionView.self, forCellWithReuseIdentifier: "cell2")
+        collection.register(CellCollectionView.self, forCellWithReuseIdentifier: "cell2")
         collection.backgroundColor = UIColor(named: "bg")
         collection.layer.cornerRadius = collection.frame.width / 2
 

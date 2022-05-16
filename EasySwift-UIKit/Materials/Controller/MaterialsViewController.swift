@@ -50,8 +50,8 @@ final class MaterialsViewController: UIViewController {
     }
 
 //MARK: - PressTheCell
-    @objc func cellTouch(){
-        let collectionVC = DetaiInformation ()
+    @objc func cellTouch(vc viewController: UIViewController){ // функция которая отвечает за переход на новый vc 
+        let collectionVC = viewController
         navigationController?.pushViewController(collectionVC, animated: true)
     }
 
@@ -94,7 +94,22 @@ extension MaterialsViewController: UICollectionViewDelegate, UICollectionViewDat
     }
 
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        cellTouch()
+
+        switch indexPath.row{
+        case 0:
+            print(1)
+//            cellTouch(vc: TestViewController())
+        case 1:
+            print(1)
+
+//            cellTouch(vc: DetaiInformation())
+        default:
+            print(1)
+
+//            print("..")
+
+        }
+//        cellTouch()
     }
 }
 
@@ -122,7 +137,13 @@ extension MaterialsViewController: UITableViewDataSource, UITableViewDelegate {
     }
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        cellTouch()
+
+        switch indexPath.row {
+        case 2:
+            cellTouch(vc: DetaiInformation())
+        default:
+            print("this default")
+        }
     }
 
 }

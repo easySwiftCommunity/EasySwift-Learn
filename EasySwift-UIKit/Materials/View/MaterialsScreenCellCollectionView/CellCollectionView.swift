@@ -40,9 +40,9 @@ class CellCollectionView: UICollectionViewCell {
 
         contentView.addSubview(destinationImage)
         NSLayoutConstraint.activate([
-            destinationImage.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 12),
-            destinationImage.rightAnchor.constraint(equalTo: contentView.rightAnchor, constant: -12 ),
-            destinationImage.bottomAnchor.constraint(equalTo: contentView.bottomAnchor,constant: -12),
+            destinationImage.topAnchor.constraint(equalTo: contentView.topAnchor, constant: contentView.bounds.height/4),
+            destinationImage.rightAnchor.constraint(equalTo: contentView.rightAnchor, constant: -(contentView.bounds.width / 15) ),
+//            destinationImage.bottomAnchor.constraint(equalTo: contentView.bottomAnchor,constant: -(contentView.bounds.height/3)),
             destinationImage.widthAnchor.constraint(equalToConstant: 16),
             destinationImage.heightAnchor.constraint(equalToConstant: 24)
         ])
