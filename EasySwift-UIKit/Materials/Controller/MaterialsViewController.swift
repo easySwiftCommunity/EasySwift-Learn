@@ -10,23 +10,18 @@ import UIKit
 
 final class MaterialsViewController: UIViewController {
 
-// MARK: !! Singltone
-    static var singleton = MaterialsViewController()
-// ----------
-
     fileprivate lazy var mainView = MaterialsView()
 
-//MARK: - Data for CollectionView
+    //MARK: - Data for CollectionView
     let mainMaterialsName = [MainMaterialModel(name: "Apple Doka"), MainMaterialModel(name: "Swift Book")]
 
-//MARK: - loadView
+    //MARK: - loadView
     override func loadView() {
         super.loadView()
         self.view = mainView
-
     }
 
-//MARK: - viewDidLoad
+    //MARK: - viewDidLoad
     override func viewDidLoad() {
         super.viewDidLoad()
         setupDataAndDeleagateForTableAndCollection()
@@ -35,27 +30,27 @@ final class MaterialsViewController: UIViewController {
 
     }
 
-//MARK: - viewWillAppear
+    //MARK: - viewWillAppear
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         setupNavController()
     }
 
-//MARK: - ConnectingСommunication
-  private  func setupDataAndDeleagateForTableAndCollection(){
+    //MARK: - ConnectingСommunication
+    private  func setupDataAndDeleagateForTableAndCollection(){
         mainView.collectionView.delegate        = self
         mainView.collectionView.dataSource      = self
         mainView.ourMaterialsTable.delegate     = self
         mainView.ourMaterialsTable.dataSource   = self
     }
 
-//MARK: - PressTheCell
-    @objc func cellTouch(vc viewController: UIViewController){ // функция которая отвечает за переход на новый vc 
+    //MARK: - PressTheCell
+    @objc func cellTouch(vc viewController: UIViewController){ // функция которая отвечает за переход на новый vc
         let collectionVC = viewController
         navigationController?.pushViewController(collectionVC, animated: true)
     }
 
-//MARK: - SettingNavigationContoller
+    //MARK: - SettingNavigationContoller
     private func setupNavController() {
         title = "Материалы"
         self.navigationController?.navigationBar.tintColor = UIColor(red: 0.442, green: 0.454, blue: 0.48, alpha: 1)
@@ -74,14 +69,16 @@ extension MaterialsViewController: UICollectionViewDelegate, UICollectionViewDat
     }
 
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return MaterialsViewController.singleton.mainMaterialsName.count
+        return mainMaterialsName.count
     }
 
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! CellCollectionView
 
-        cell.nameLabel.text = MaterialsViewController.singleton.mainMaterialsName[indexPath.row].name
-        cell.destinationImage.image = UIImage(named: "cell")
+        cell.nameLabel.text = mainMaterialsName[indexPath.row].name
+        //        cell.destinationImage.image = UIImage(named: "cell")
+        cell.destinationImage.image = UIImage(systemName: "arrow.up.right")
+        cell.destinationImage.tintColor = UIColor(red: 113/255, green: 116/255 , blue: 122/255, alpha: 1)
 
         cell.layer.cornerRadius = 12.0
         cell.backgroundColor = UIColor(red: 0.788, green: 0.8, blue: 0.82, alpha: 0.24)
@@ -98,18 +95,18 @@ extension MaterialsViewController: UICollectionViewDelegate, UICollectionViewDat
         switch indexPath.row{
         case 0:
             print(1)
-//            cellTouch(vc: TestViewController())
+            //            cellTouch(vc: TestViewController())
         case 1:
             print(1)
 
-//            cellTouch(vc: DetaiInformation())
+            //            cellTouch(vc: DetaiInformation())
         default:
             print(1)
 
-//            print("..")
+            //            print("..")
 
         }
-//        cellTouch()
+        //        cellTouch()
     }
 }
 
