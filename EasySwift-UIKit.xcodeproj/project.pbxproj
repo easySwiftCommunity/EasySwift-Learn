@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		16060B18253F542D2F01914D /* Pods_EasySwift_UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD18305684E688D59D4262F5 /* Pods_EasySwift_UIKit.framework */; };
 		A00E5FEE28170E8500452705 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = A00E5FED28170E8500452705 /* .gitignore */; };
 		A035DA3D2815C9E700CDEB74 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A035DA3C2815C9E700CDEB74 /* AppDelegate.swift */; };
 		A035DA3F2815C9E700CDEB74 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A035DA3E2815C9E700CDEB74 /* SceneDelegate.swift */; };
@@ -24,6 +25,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		635FA101A3B97A98BFE5E5A9 /* Pods-EasySwift-UIKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasySwift-UIKit.release.xcconfig"; path = "Target Support Files/Pods-EasySwift-UIKit/Pods-EasySwift-UIKit.release.xcconfig"; sourceTree = "<group>"; };
+		7D890635CF7D7C8A8C074493 /* Pods-EasySwift-UIKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasySwift-UIKit.debug.xcconfig"; path = "Target Support Files/Pods-EasySwift-UIKit/Pods-EasySwift-UIKit.debug.xcconfig"; sourceTree = "<group>"; };
 		A00E5FED28170E8500452705 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		A035DA392815C9E700CDEB74 /* EasySwift-UIKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "EasySwift-UIKit.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A035DA3C2815C9E700CDEB74 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -40,6 +43,7 @@
 		D2B3FCDA281747AC00F2E28C /* MainMaterialsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMaterialsModel.swift; sourceTree = "<group>"; };
 		D2DED84B28238819002DC2AB /* DetailInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailInfoView.swift; sourceTree = "<group>"; };
 		D2F8A4EA28196A36000F3391 /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
+		DD18305684E688D59D4262F5 /* Pods_EasySwift_UIKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EasySwift_UIKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				16060B18253F542D2F01914D /* Pods_EasySwift_UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +64,8 @@
 				A00E5FED28170E8500452705 /* .gitignore */,
 				A035DA3B2815C9E700CDEB74 /* EasySwift-UIKit */,
 				A035DA3A2815C9E700CDEB74 /* Products */,
+				F6DFF94438E2005DF0D050A5 /* Pods */,
+				AEAF4D54B072910E38B58F37 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -123,12 +130,30 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
+		AEAF4D54B072910E38B58F37 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DD18305684E688D59D4262F5 /* Pods_EasySwift_UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		D29EC79E281893B50022D404 /* MaterialsScreenCellCollectionView */ = {
 			isa = PBXGroup;
 			children = (
 				D2B3FCD82817466500F2E28C /* CellCollectionView.swift */,
 			);
 			path = MaterialsScreenCellCollectionView;
+			sourceTree = "<group>";
+		};
+		F6DFF94438E2005DF0D050A5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7D890635CF7D7C8A8C074493 /* Pods-EasySwift-UIKit.debug.xcconfig */,
+				635FA101A3B97A98BFE5E5A9 /* Pods-EasySwift-UIKit.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,6 +163,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A035DA4D2815C9E800CDEB74 /* Build configuration list for PBXNativeTarget "EasySwift-UIKit" */;
 			buildPhases = (
+				F3CC44D8DC06F0CC9E695AD1 /* [CP] Check Pods Manifest.lock */,
 				A035DA352815C9E700CDEB74 /* Sources */,
 				A035DA362815C9E700CDEB74 /* Frameworks */,
 				A035DA372815C9E700CDEB74 /* Resources */,
@@ -196,6 +222,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		F3CC44D8DC06F0CC9E695AD1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-EasySwift-UIKit-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A035DA352815C9E700CDEB74 /* Sources */ = {
@@ -348,6 +399,7 @@
 		};
 		A035DA4E2815C9E800CDEB74 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7D890635CF7D7C8A8C074493 /* Pods-EasySwift-UIKit.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -377,6 +429,7 @@
 		};
 		A035DA4F2815C9E800CDEB74 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 635FA101A3B97A98BFE5E5A9 /* Pods-EasySwift-UIKit.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
