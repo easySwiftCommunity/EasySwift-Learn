@@ -8,6 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		16060B18253F542D2F01914D /* Pods_EasySwift_UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD18305684E688D59D4262F5 /* Pods_EasySwift_UIKit.framework */; };
+		72864C67284CC44300946B3F /* CellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72864C66284CC44300946B3F /* CellModel.swift */; };
+		72864C69284CC44A00946B3F /* MyCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72864C68284CC44A00946B3F /* MyCollectionViewCell.swift */; };
+		72864C6C284CC45A00946B3F /* ParallaxViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72864C6B284CC45A00946B3F /* ParallaxViewController.swift */; };
+		72864C6E284CC45F00946B3F /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72864C6D284CC45F00946B3F /* HeaderView.swift */; };
+		72864C70284CC46300946B3F /* VideoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72864C6F284CC46300946B3F /* VideoTableViewCell.swift */; };
+		72864C72284CC46800946B3F /* DescriptionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72864C71284CC46800946B3F /* DescriptionTableViewCell.swift */; };
+		72864C74284CC47300946B3F /* MyCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72864C73284CC47300946B3F /* MyCollectionViewCell.swift */; };
+		72864C76284CC47A00946B3F /* InterviewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72864C75284CC47A00946B3F /* InterviewsViewController.swift */; };
+		72864C78284CC48600946B3F /* CollectionLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72864C77284CC48600946B3F /* CollectionLayout.swift */; };
+		72864C7A284CC48B00946B3F /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72864C79284CC48B00946B3F /* TestViewController.swift */; };
 		A00E5FEE28170E8500452705 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = A00E5FED28170E8500452705 /* .gitignore */; };
 		A035DA3D2815C9E700CDEB74 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A035DA3C2815C9E700CDEB74 /* AppDelegate.swift */; };
 		A035DA3F2815C9E700CDEB74 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A035DA3E2815C9E700CDEB74 /* SceneDelegate.swift */; };
@@ -26,6 +36,16 @@
 
 /* Begin PBXFileReference section */
 		635FA101A3B97A98BFE5E5A9 /* Pods-EasySwift-UIKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasySwift-UIKit.release.xcconfig"; path = "Target Support Files/Pods-EasySwift-UIKit/Pods-EasySwift-UIKit.release.xcconfig"; sourceTree = "<group>"; };
+		72864C66284CC44300946B3F /* CellModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CellModel.swift; path = ../../../../search/search/CellModel.swift; sourceTree = "<group>"; };
+		72864C68284CC44A00946B3F /* MyCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MyCollectionViewCell.swift; path = ../../../../search/search/MyCollectionViewCell.swift; sourceTree = "<group>"; };
+		72864C6B284CC45A00946B3F /* ParallaxViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ParallaxViewController.swift; path = ../../../../../Parallax/Parallax/ParallaxViewController.swift; sourceTree = "<group>"; };
+		72864C6D284CC45F00946B3F /* HeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HeaderView.swift; path = ../../../../../Parallax/Parallax/HeaderView.swift; sourceTree = "<group>"; };
+		72864C6F284CC46300946B3F /* VideoTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VideoTableViewCell.swift; path = ../../../../../Parallax/Parallax/VideoTableViewCell.swift; sourceTree = "<group>"; };
+		72864C71284CC46800946B3F /* DescriptionTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DescriptionTableViewCell.swift; path = ../../../../../Parallax/Parallax/DescriptionTableViewCell.swift; sourceTree = "<group>"; };
+		72864C73284CC47300946B3F /* MyCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MyCollectionViewCell.swift; path = ../../../../search/search/MyCollectionViewCell.swift; sourceTree = "<group>"; };
+		72864C75284CC47A00946B3F /* InterviewsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = InterviewsViewController.swift; path = ../../../../search/search/InterviewsViewController.swift; sourceTree = "<group>"; };
+		72864C77284CC48600946B3F /* CollectionLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CollectionLayout.swift; path = ../../../../search/compositionCV/CollectionLayout.swift; sourceTree = "<group>"; };
+		72864C79284CC48B00946B3F /* TestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TestViewController.swift; path = ../../../../search/compositionCV/TestViewController.swift; sourceTree = "<group>"; };
 		7D890635CF7D7C8A8C074493 /* Pods-EasySwift-UIKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasySwift-UIKit.debug.xcconfig"; path = "Target Support Files/Pods-EasySwift-UIKit/Pods-EasySwift-UIKit.debug.xcconfig"; sourceTree = "<group>"; };
 		A00E5FED28170E8500452705 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		A035DA392815C9E700CDEB74 /* EasySwift-UIKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "EasySwift-UIKit.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -58,6 +78,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		72864C6A284CC44F00946B3F /* Parallax */ = {
+			isa = PBXGroup;
+			children = (
+				72864C6B284CC45A00946B3F /* ParallaxViewController.swift */,
+				72864C6D284CC45F00946B3F /* HeaderView.swift */,
+				72864C6F284CC46300946B3F /* VideoTableViewCell.swift */,
+				72864C71284CC46800946B3F /* DescriptionTableViewCell.swift */,
+			);
+			path = Parallax;
+			sourceTree = "<group>";
+		};
 		A035DA302815C9E700CDEB74 = {
 			isa = PBXGroup;
 			children = (
@@ -103,8 +134,10 @@
 		A0BAC0052816D2A900FA2770 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				72864C77284CC48600946B3F /* CollectionLayout.swift */,
 				A0BAC0082816D31400FA2770 /* OurMaterials.swift */,
 				D2B3FCDA281747AC00F2E28C /* MainMaterialsModel.swift */,
+				72864C66284CC44300946B3F /* CellModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -112,6 +145,8 @@
 		A0BAC0062816D2AE00FA2770 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				72864C68284CC44A00946B3F /* MyCollectionViewCell.swift */,
+				72864C73284CC47300946B3F /* MyCollectionViewCell.swift */,
 				A0BAC00A2816D37A00FA2770 /* MaterialsView.swift */,
 				D2DED84B28238819002DC2AB /* DetailInfoView.swift */,
 				D29EC79E281893B50022D404 /* MaterialsScreenCellCollectionView */,
@@ -122,7 +157,10 @@
 		A0BAC0072816D2B100FA2770 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				72864C6A284CC44F00946B3F /* Parallax */,
 				A035DA402815C9E700CDEB74 /* MaterialsViewController.swift */,
+				72864C79284CC48B00946B3F /* TestViewController.swift */,
+				72864C75284CC47A00946B3F /* InterviewsViewController.swift */,
 				D29EC7A32818945F0022D404 /* DetailScreen.swift */,
 				D2F8A4EA28196A36000F3391 /* TabBar.swift */,
 				D26E9E5E2832B9C6009BAA8B /* TestViewController.swift */,
@@ -152,7 +190,6 @@
 				7D890635CF7D7C8A8C074493 /* Pods-EasySwift-UIKit.debug.xcconfig */,
 				635FA101A3B97A98BFE5E5A9 /* Pods-EasySwift-UIKit.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -167,6 +204,7 @@
 				A035DA352815C9E700CDEB74 /* Sources */,
 				A035DA362815C9E700CDEB74 /* Frameworks */,
 				A035DA372815C9E700CDEB74 /* Resources */,
+				83C00BF651DFAA4172D4A823 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -224,6 +262,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		83C00BF651DFAA4172D4A823 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-EasySwift-UIKit/Pods-EasySwift-UIKit-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-EasySwift-UIKit/Pods-EasySwift-UIKit-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-EasySwift-UIKit/Pods-EasySwift-UIKit-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		F3CC44D8DC06F0CC9E695AD1 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -255,15 +310,25 @@
 			files = (
 				D2F8A4EB28196A36000F3391 /* TabBar.swift in Sources */,
 				A0BAC00B2816D37A00FA2770 /* MaterialsView.swift in Sources */,
+				72864C74284CC47300946B3F /* MyCollectionViewCell.swift in Sources */,
+				72864C78284CC48600946B3F /* CollectionLayout.swift in Sources */,
+				72864C76284CC47A00946B3F /* InterviewsViewController.swift in Sources */,
+				72864C72284CC46800946B3F /* DescriptionTableViewCell.swift in Sources */,
 				D26E9E5F2832B9C6009BAA8B /* TestViewController.swift in Sources */,
+				72864C7A284CC48B00946B3F /* TestViewController.swift in Sources */,
 				A035DA412815C9E700CDEB74 /* MaterialsViewController.swift in Sources */,
 				D2B3FCD92817466500F2E28C /* CellCollectionView.swift in Sources */,
+				72864C6C284CC45A00946B3F /* ParallaxViewController.swift in Sources */,
 				A0BAC0092816D31400FA2770 /* OurMaterials.swift in Sources */,
 				D29EC7A42818945F0022D404 /* DetailScreen.swift in Sources */,
 				A035DA3D2815C9E700CDEB74 /* AppDelegate.swift in Sources */,
 				D2DED84C28238819002DC2AB /* DetailInfoView.swift in Sources */,
+				72864C6E284CC45F00946B3F /* HeaderView.swift in Sources */,
 				A035DA3F2815C9E700CDEB74 /* SceneDelegate.swift in Sources */,
 				D2B3FCDB281747AC00F2E28C /* MainMaterialsModel.swift in Sources */,
+				72864C70284CC46300946B3F /* VideoTableViewCell.swift in Sources */,
+				72864C69284CC44A00946B3F /* MyCollectionViewCell.swift in Sources */,
+				72864C67284CC44300946B3F /* CellModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

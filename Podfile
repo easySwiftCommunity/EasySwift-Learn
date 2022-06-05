@@ -6,5 +6,6 @@ target 'EasySwift-UIKit' do
   use_frameworks!
 
   # Pods for EasySwift-UIKit
+  pod 'SnapKit', '~> 4.0.0'
 
 end
