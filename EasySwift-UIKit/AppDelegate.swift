@@ -10,6 +10,9 @@ import UIKit
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
+//TODO: - ДОПИЛИТЬ ПРИЛУ
+    // - ДИЗАЙН ВЗЯТЬ ИЗ ФИГМЫ
+
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         return true
