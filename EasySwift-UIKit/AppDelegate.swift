@@ -11,7 +11,7 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
 //TODO: - ДОПИЛИТЬ ПРИЛУ
-    // - ДИЗАЙН ВЗЯТЬ ИЗ ФИГМЫ
+    // - ДИЗАЙН ВЗЯТЬ ИЗ ФИГМЫ (https://www.figma.com/file/Rj7pECH4t2868iJjvi5Irw/Untitled?node-id=0%3A1)
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
