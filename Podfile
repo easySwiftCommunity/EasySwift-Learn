@@ -7,5 +7,6 @@ target 'EasySwift-UIKit' do
 
   # Pods for EasySwift-UIKit
   pod 'SnapKit', '~> 4.0.0'
-
+  pod 'lottie-ios'
+  pod 'Alamofire'
 end
