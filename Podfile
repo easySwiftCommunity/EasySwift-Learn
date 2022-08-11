@@ -9,4 +9,6 @@ target 'EasySwift-UIKit' do
   pod 'SnapKit', '~> 4.0.0'
   pod 'lottie-ios'
   pod 'Alamofire'
+  pod 'ProgressHUD'
+
 end
