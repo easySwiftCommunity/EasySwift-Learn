@@ -13,6 +13,7 @@
 		A035DA3F2815C9E700CDEB74 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A035DA3E2815C9E700CDEB74 /* SceneDelegate.swift */; };
 		A035DA462815C9E800CDEB74 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A035DA452815C9E800CDEB74 /* Assets.xcassets */; };
 		A035DA492815C9E800CDEB74 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A035DA472815C9E800CDEB74 /* LaunchScreen.storyboard */; };
+		D25772BD28A9342D0078EC9C /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D25772BC28A9342D0078EC9C /* Coordinator.swift */; };
 		D2DC273928A455CE0030A35F /* StartViewContoller.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2DC273828A455CE0030A35F /* StartViewContoller.swift */; };
 /* End PBXBuildFile section */
 
@@ -26,6 +27,7 @@
 		A035DA452815C9E800CDEB74 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A035DA482815C9E800CDEB74 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A035DA4A2815C9E800CDEB74 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D25772BC28A9342D0078EC9C /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		D2DC273828A455CE0030A35F /* StartViewContoller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewContoller.swift; sourceTree = "<group>"; };
 		DD18305684E688D59D4262F5 /* Pods_EasySwift_UIKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EasySwift_UIKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -64,6 +66,7 @@
 		A035DA3B2815C9E700CDEB74 /* EasySwift-UIKit */ = {
 			isa = PBXGroup;
 			children = (
+				D25772BA28A9340D0078EC9C /* Coordinators */,
 				A035DA3C2815C9E700CDEB74 /* AppDelegate.swift */,
 				A035DA3E2815C9E700CDEB74 /* SceneDelegate.swift */,
 				A035DA452815C9E800CDEB74 /* Assets.xcassets */,
@@ -80,6 +83,22 @@
 				DD18305684E688D59D4262F5 /* Pods_EasySwift_UIKit.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D25772BA28A9340D0078EC9C /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				D25772BB28A9341D0078EC9C /* Protocols */,
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		D25772BB28A9341D0078EC9C /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				D25772BC28A9342D0078EC9C /* Coordinator.swift */,
+			);
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 		F6DFF94438E2005DF0D050A5 /* Pods */ = {
@@ -206,6 +225,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D25772BD28A9342D0078EC9C /* Coordinator.swift in Sources */,
 				A035DA3D2815C9E700CDEB74 /* AppDelegate.swift in Sources */,
 				A035DA3F2815C9E700CDEB74 /* SceneDelegate.swift in Sources */,
 				D2DC273928A455CE0030A35F /* StartViewContoller.swift in Sources */,
